@@ -1,0 +1,104 @@
+body{
+
+    background-image:url(/images/wallpaper.jpg);
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+header, footer {
+ background-color:#cf45b371;
+ width: 100%;
+ height: 50px;
+ font-family: 'Nunito Sans', sans-serif;
+}
+header{
+    display: inline-flex;
+    font-size: 1.1em;
+}
+a{
+    letter-spacing: 5px;
+    color: azure;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:overline;
+    color: aqua;
+}
+
+
+.logo{
+    color: white;
+    font-size: 1.1em; 
+    text-decoration:none;
+}
+footer{
+    text-align: center;
+}
+button{
+    font-size: 1em;
+    width: auto;
+    height: 40px;
+    background-color:rgba(0, 255, 4, 0.351);
+    border-radius: 5px;
+    margin: 5px;
+}
+.problema{
+    grid-area: a1;
+    text-align: left;
+    background-color: #2768c271;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+}
+.esquemaProblema{
+    grid-area: a2;
+    background-color: #2768c271;
+    border-radius: 10px;
+    margin: 10px;
+}
+.imgProblema{
+    border-radius:10px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+}
+.datos{
+    grid-area: a3;
+    background-color: rgba(152, 29, 218, 0.46);
+    border-radius: 10px;
+    margin: 10px;
+}
+.formulas{
+    grid-area: a4;
+    background-color: rgba(152, 29, 218, 0.46);
+    border-radius: 10px;
+    margin: 10px;
+}
+.calculos{
+    grid-area: a5;
+    background-color: rgba(163, 23, 23, 0.681);
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+.resultado{
+    grid-area: a6;
+    background-color: rgba(163, 23, 23, 0.681);
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#contenedor{
+    display: grid;
+    grid-template-columns:  repeat(4, [col] 1fr) ;
+    grid-template-rows: auto;
+    grid-template-areas: "a1 a1 a2 a2"
+                         "a3 a3 a4 a4"
+                         "a5 a5 a6 a6";
+    width: 100%;
+    height: 100%;
+}

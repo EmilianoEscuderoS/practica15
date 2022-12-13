@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <title>CiTIM Programación Web XA</title>
+    <link rel="stylesheet" href="css/problemaStem.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="js/calcularStem.js"></script>
+</head>
+<body>
+  <section class="wrapper">
+    <header>
+      <h1 class="logo"><a href="stem.html">CiTIM</a></h1>
+      
+    </header>
+  <center><section id="contenedor">
+    <section  class="problema">
+      <center><h2>Problema: Descomposición de una fuerza</h2>
+        <p>Descripción:</p>
+        <p>Halla el ángulo formado con el eje de las x por una fuerza de
+          módulo 3,2 si su componente en el eje de las x es 2,2<br>
+        </p></center>
+        <br><br><br><br><br>
+        <h4>Datos alumno:</h4>
+        <p>Nombre: Miguel Emiliano Escudero Saavedra<br>
+          No. de Control: 20091073<br>
+          No. de problema: EJ6 PAG 53
+        </p>
+      </section>
+      <section  class="esquemaProblema">
+      <h2>Esquema</h2>
+        <img class="imgProblema" src="images/problemaMEES.png">
+        
+      </section>
+      <section class="formulas">
+      <h2>Fórmulas</h2>
+        cos &alpha; = Fx / F<br><br>
+        &alpha; = cos-1 (Fx /F)
+        <br><br>
+      </section>
+      <section class="datos">
+      <h2>Datos:</h2>
+        F = 3.2 N<br><br>
+        Fx = 2.2 N
+      </section>
+      <section class="calculos">
+        <h2>Solución</h2>
+        <p>Tenemos que:<br><br>
+        cos &alpha; = Fx/F &LongRightArrow; &alpha; = cos-1 (Fx/F);  <br><br>
+        &alpha; = cos-1 (2.2 / 3.2) = ?
+        </p>
+        <button onclick="calcula_angulo();">Presiona para calcular</button>
+      </section>
+      <section class="resultado">
+        <h2>Resultado:</h2>
+        <div id="resultadoA"></div>
+      </section>
+    </section></center>
+    <footer class="pie">
+     Creative Commons versión 3.0 SciSoft 2021
+    </footer>
+  </section>
+</body>
+</html>
